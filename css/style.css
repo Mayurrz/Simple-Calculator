@@ -1,0 +1,115 @@
+/* Box Model */
+*{
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/******************************************
+/* DECLARING VARIABLES
+/*******************************************/
+:root {
+    /* COLORS */
+    --dark: rgb(0, 0, 15);
+    --light-dark: rgba(4, 7, 39, 0.836);
+    --accent-dark: rgba(27, 29, 46, 0.986);
+    --light: #fff;
+    --accent: rgb(0, 146, 214);
+    --blue: rgba(10, 0, 148, 0.849);
+    --black: rgba(11, 13, 37, 0.986);
+    --saturated: rgba(221, 58, 58, 0.884);
+    --green: rgb(0, 206, 27);
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body{
+    margin: 0 auto;
+    background-color: var(--dark);
+}
+.display{
+    height: calc(100vh - 310.75px);
+}
+.theme{
+    margin: 10px auto 10px;
+    display: flex;
+    flex-direction: row;
+    color: var(--light);
+    justify-content: center;
+    /* align-items: center; */
+    width: 90vw;
+    height: 40px;
+}
+.light{
+    width: 50%;
+    background-color: var(--blue);
+    border-radius: 4px 0 0 4px;
+    text-align: center;
+    padding: 10px;
+    text-transform: capitalize;
+}
+.dark{
+    width: 50%;
+    background-color: var(--black);
+    border-radius: 0 4px 4px 0;
+    text-align: center;
+    padding: 10px;
+    text-transform: capitalize;
+}
+h2{
+    width: 90vw;
+    background-color: var(--accent-dark);
+    margin: 10px auto;
+    color: var(--light);
+    font-weight: 200;
+    font-size: 20px;
+}
+h1{
+    margin: 120px auto 0;
+    text-align: right;
+    height: 100px;
+    width: 90vw;
+    /* background-color: red; */
+    font-size: 40px;
+    padding: 30px 0 0;
+    color: var(--green);
+}
+.input{
+    display: flex;
+    width: auto;
+    background-color: var(--light-dark);
+    border-radius: 10px 10px 0 0;
+}
+
+ul{
+    margin: 30px auto 10px;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 2.7px;
+    width: 92vw;
+    border-radius: 100px;
+}
+li{
+    width: 22vw;
+    height: 50px;
+    background-color: var(--accent-dark);
+    color: var(--light);
+    text-align: center;
+    padding: 15px;
+    border-radius: 2px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.sign{
+    background-color: var(--accent);
+    color: var(--saturated);
+}
+.prev{
+    background-color: var(--saturated);
+}
+.grow{
+    width: calc(44vw + 2.7px);
+}
